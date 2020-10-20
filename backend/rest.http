@@ -1,0 +1,4 @@
+# GET https://reqres.in/api/users
+# OPTIONS https://reqres.in/api/users
+# POST http://localhost:3000/signin
+GET http://localhost:3000/profile/125
