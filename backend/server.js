@@ -88,14 +88,13 @@ app.post("/register", (req, res) => {
     // Store hash in your password DB
     console.log(hash);
   });
-  database.users.push({
-    id: "125",
-    name: name,
-    email: email,
-    password: password,
-    entries: 0,
-    joined: new Date()
-  });
+  db("users")
+    .insert({
+      email: email,
+      name: name,
+      joined: new Date()
+    })
+    .then(console.log);
   res.json(database.users[database.users.length - 1]);
 });
 
