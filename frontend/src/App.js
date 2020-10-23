@@ -91,7 +91,6 @@ class App extends Component {
         joined: data.joined
       }
     });
-    console.log(this.state.user);
   };
 
   calculateFaceLocation = data => {
@@ -109,7 +108,6 @@ class App extends Component {
   };
 
   displayFaceBox = box => {
-    console.log(box);
     this.setState({ box: box });
   };
 
